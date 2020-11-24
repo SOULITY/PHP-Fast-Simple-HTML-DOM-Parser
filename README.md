@@ -11,7 +11,7 @@ PHP Fast Simple HTML DOM Parser - fast and low mamory usage HTML DOM Parser with
 
 Для установки выполните команду:
 
-    composer require dimabdc/php-fast-simple-html-dom-parser
+    composer require soulity/php-fast-simple-html-dom-parser
 
 ## Быстрый старт
 
