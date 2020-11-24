@@ -84,7 +84,8 @@ class Document
             throw new InvalidArgumentException(__METHOD__ . ' expects parameter 1 to be string.');
         }
 
-        $html = preg_replace('/>(?:[\t\s\n\r])+</', '><', $html);
+        $html = preg_replace('/>(?:[\t\n\r]+)</', '><', $html);
+        $html = preg_replace('/>(?:[\s]+)</', '> <', $html);
 
         libxml_use_internal_errors(true);
 
